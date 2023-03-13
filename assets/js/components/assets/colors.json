@@ -1,0 +1,26 @@
+[
+  {
+    "name": "black",
+    "imageUrl": "/content/img/panel--bk.jpg"
+  },
+  {
+    "name": "coyote-brown",
+    "imageUrl": "/content/img/panel--cb.jpg"
+  },
+  {
+    "name": "ranger-green",
+    "imageUrl": "/content/img/panel--rg.jpg"
+  },
+  {
+    "name": "wolf-grey",
+    "imageUrl": "/content/img/panel--wg.jpg"
+  },
+  {
+    "name": "multicam",
+    "imageUrl": "/content/img/panel--mc.jpg"
+  },
+  {
+    "name": "multicam-black",
+    "imageUrl": "/content/img/panel--mcb.jpg"
+  }
+]

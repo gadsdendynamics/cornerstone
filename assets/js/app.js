@@ -1,6 +1,9 @@
 __webpack_public_path__ = window.__webpack_public_path__; // eslint-disable-line
 
 import Global from './theme/global';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import {ChestRigBuilderWrapper} from "./components/ChestRigBuilderWrapper";
 
 const getAccount = () => import('./theme/account');
 const getLogin = () => import('./theme/auth');
@@ -96,3 +99,8 @@ window.stencilBootstrap = function stencilBootstrap(pageType, contextJSON = null
         },
     };
 };
+
+// React
+const container = document.getElementById('chest-rig-builder');
+const root = createRoot(container);
+root.render(<ChestRigBuilderWrapper />);

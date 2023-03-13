@@ -1,0 +1,128 @@
+[
+  {
+    "id": "0",
+    "name": "5.56 Mag Pouch",
+    "imageUrl": "/content/img/accessory--up--bk--3.png",
+    "bcId": "189",
+    "price": "$8",
+    "widthScale": 3,
+    "color": "black"
+  },
+  {
+    "id": "1",
+    "name": "Double Stack Pistol Mag Pouch",
+    "imageUrl": "/content/img/accessory--dsp--bk--2.png",
+    "bcId": "191",
+    "price": "$8",
+    "widthScale": 2,
+    "color": "black"
+  },
+  {
+    "id": "00",
+    "name": "5.56 Mag Pouch",
+    "imageUrl": "/content/img/accessory--up--bk--3.png",
+    "bcId": "189",
+    "price": "$8",
+    "widthScale": 3,
+    "color": "black"
+  },
+  {
+    "id": "11",
+    "name": "Double Stack Pistol Mag Pouch",
+    "imageUrl": "/content/img/accessory--dsp--bk--2.png",
+    "bcId": "191",
+    "price": "$8",
+    "widthScale": 2,
+    "color": "black"
+  },
+  {
+    "id": "2",
+    "name": "5.56 Mag Pouch",
+    "imageUrl": "/content/img/accessory--up--cb--3.png",
+    "bcId": "189",
+    "price": "$8",
+    "widthScale": 3,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "3",
+    "name": "Double Stack Pistol Mag Pouch",
+    "imageUrl": "/content/img/accessory--dsp--cb--2.png",
+    "bcId": "191",
+    "price": "$8",
+    "widthScale": 2,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "4",
+    "name": "5.56 Mag Pouch",
+    "imageUrl": "/content/img/accessory--up--rg--3.png",
+    "bcId": "189",
+    "price": "$8",
+    "widthScale": 3,
+    "color": "ranger-green"
+  },
+  {
+    "id": "5",
+    "name": "Double Stack Pistol Mag Pouch",
+    "imageUrl": "/content/img/accessory--dsp--rg--2.png",
+    "bcId": "191",
+    "price": "$8",
+    "widthScale": 2,
+    "color": "ranger-green"
+  },
+  {
+    "id": "6",
+    "name": "5.56 Mag Pouch",
+    "imageUrl": "/content/img/accessory--up--wg--3.png",
+    "bcId": "189",
+    "price": "$8",
+    "widthScale": 3,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "7",
+    "name": "Double Stack Pistol Mag Pouch",
+    "imageUrl": "/content/img/accessory--dsp--wg--2.png",
+    "bcId": "191",
+    "price": "$8",
+    "widthScale": 2,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "8",
+    "name": "5.56 Mag Pouch",
+    "imageUrl": "/content/img/accessory--up--mc--3.png",
+    "bcId": "189",
+    "price": "$8",
+    "widthScale": 3,
+    "color": "multicam"
+  },
+  {
+    "id": "9",
+    "name": "Double Stack Pistol Mag Pouch",
+    "imageUrl": "/content/img/accessory--dsp--mc--2.png",
+    "bcId": "191",
+    "price": "$8",
+    "widthScale": 2,
+    "color": "multicam"
+  },
+  {
+    "id": "10",
+    "name": "5.56 Mag Pouch",
+    "imageUrl": "/content/img/accessory--up--mcb--3.png",
+    "bcId": "189",
+    "price": "$8",
+    "widthScale": 3,
+    "color": "multicam-black"
+  },
+  {
+    "id": "11",
+    "name": "Double Stack Pistol Mag Pouch",
+    "imageUrl": "/content/img/accessory--dsp--mcb--2.png",
+    "bcId": "191",
+    "price": "$8",
+    "widthScale": 2,
+    "color": "multicam-black"
+  }
+]
