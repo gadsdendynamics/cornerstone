@@ -8,6 +8,7 @@ import {selectedAccessoryColorAtom, selectedPanelColorAtom} from "../state/atoms
 export const ColorSwatches = ({type}) => {
     const [selectedAccessoryColor, setSelectedAccessoryColor] = useRecoilState(selectedAccessoryColorAtom);
     const [selectedPanelColor, setSelectedPanelColor] = useRecoilState(selectedPanelColorAtom);
+
     const handleChangeAccessoryColor = (color) => {
         setSelectedAccessoryColor(color.name)
     }

@@ -1,4 +1,4 @@
-import {atom} from "recoil";
+import {atom, atomFamily} from "recoil";
 
 export const selectedAccessoryColorAtom = atom({
     key: 'selectedAccessoryColorAtom',

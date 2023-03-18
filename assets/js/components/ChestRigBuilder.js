@@ -1,19 +1,25 @@
 import React, {useState} from "react"
 import {DragDropContext, Droppable} from "react-beautiful-dnd"
 import accessories from "./assets/accessories.json"
-import {StyledAccessoryList, StyledChestRig, StyledChestRigBuilder} from "./ChestRigBuilder.style"
-import {filter, map, find} from "lodash";
+import {
+    StyledAccessoryList,
+    StyledChestRig,
+    StyledChestRigBuilder, StyledPreconfiguredOptions,
+    StyledSummary,
+    StyledSummaryItem
+} from "./ChestRigBuilder.style"
+import {filter, map, find, sum, concat} from "lodash";
 import {AccessoryCard} from "./components/AccessoryCard";
 import {AccessoryTile} from "./components/AccessoryTile";
 import {ColorSwatches} from "./components/ColorSwatches";
-import {addonsAtom, selectedAccessoryColorAtom} from "./state/atoms";
+import {accessoriesAtom, addonsAtom, selectedAccessoryColorAtom} from "./state/atoms";
 import {selectedPanelColorAtom} from "./state/atoms";
-import {useRecoilValue} from "recoil";
+import {useRecoilState, useRecoilValue} from "recoil";
 import {AddOns} from "./components/AddOns";
 import 'regenerator-runtime/runtime';
 
 export const ChestRigBuilder = () => {
-    const [selected, setSelected] = useState([])
+    const [selected, setSelected] = useRecoilState(accessoriesAtom);
     const addons = useRecoilValue(addonsAtom);
     const selectedAccessoryColor = useRecoilValue(selectedAccessoryColorAtom);
     const selectedPanelColor = useRecoilValue(selectedPanelColorAtom);
@@ -26,7 +32,7 @@ export const ChestRigBuilder = () => {
             return null
         }
         if (source?.droppableId !== destination?.droppableId) {
-            const draggableItem = find(accessories, { id: draggableId });
+            const draggableItem = find(accessories, (item) => item.id === draggableId);
             setSelected([...selected, {
                 id: `cr-${draggableItem.id}`,
                 bcId: draggableItem.bcId,
@@ -75,36 +81,27 @@ export const ChestRigBuilder = () => {
         })
             .then(data => console.log(JSON.stringify(data)))
             .catch(error => console.error(error))
-        // const accessoryRequests = _.forEach(selected, (item) => {
-        //     const qty = _.size(_.filter(selected, { id: item.id}))
-        //     axios.get(`/cart.php?action=add&product_id=${item.bcId}&qty=${qty}/`)
-        // })
-
-        // // Add accessories to cart
-        // await Promise.all([
-        //     ...accessoryRequests,
-        //     // Panel
-        //     axios.get(`/cart.php?action=add&product_id=200&qty=1/`),
-        //     // Harness
-        //     axios.get(`/cart.php?action=add&product_id=202&qty=1/`)
-        // ])
     }
 
     return (
         <React.Fragment>
+            <StyledPreconfiguredOptions>
+
+            </StyledPreconfiguredOptions>
             <StyledChestRigBuilder>
                 <DragDropContext onDragEnd={handleOnDragEnd}>
                     <StyledAccessoryList>
                         <Droppable droppableId="accessories" direction="vertical">
                             {provided => (
                                 <div ref={provided.innerRef} {...provided.droppableProps}>
-                                    <h2>Add-Ons</h2>
-                                    <AddOns />
                                     <h2>Accessories</h2>
                                     <h3>{selectedAccessoryColor}</h3>
                                     <ColorSwatches type="accessories" />
                                     {provided.placeholder}
                                     { map(filteredAccessories(), (item, index) => {
+                                        if (!item) {
+                                            return null;
+                                        }
                                         return <AccessoryCard key={item.id} item={item} index={index} />
                                     })}
                                 </div>
@@ -125,6 +122,9 @@ export const ChestRigBuilder = () => {
                                 }}>
                                     {provided.placeholder}
                                     { map(selected, (item, index) => {
+                                        if (!item) {
+                                            return null;
+                                        }
                                         return <AccessoryTile key={item.id} item={item} index={index} remove={handleRemove}/>
                                     })}
                                 </div>
@@ -133,18 +133,43 @@ export const ChestRigBuilder = () => {
                     </StyledChestRig>
                 </DragDropContext>
             </StyledChestRigBuilder>
-            {/* Panel */}
-            <p>Back Panel -- $28</p>
-            {/* Accessories */}
-            { map(selected, (item) => {
-                return <p key={item.id}>{item.name} -- {item?.price}</p>
-            })}
-            {/* Addons */}
-            { map(addons, (addon) => {
-                return <p key={addon.id}>{addon.name} -- {addon?.price}</p>
-            })}
-            <div>SUMMARY GOES HERE</div>
-            <button onClick={handleAddToCart}>Add to Cart</button>
+            <h2>Add-Ons</h2>
+            <AddOns />
+            <h3>Summary</h3>
+            <StyledSummary>
+                {/* Panel */}
+                <StyledSummaryItem>
+                    <div>
+                        Back Panel (required)
+                    </div>
+                    <div>
+                        $28
+                    </div>
+                </StyledSummaryItem>
+                {/* Accessories */}
+                { map(selected, (item) => {
+                    if (!item) {
+                        return null;
+                    }
+                    return <StyledSummaryItem key={item.id}><div>{item.name}</div><div>${item?.price}</div></StyledSummaryItem>
+                })}
+                {/* Addons */}
+                { map(addons, (addon) => {
+                    if (!addon) {
+                        return null;
+                    }
+                    return <StyledSummaryItem key={addon.id}><div>{addon.name}</div><div>${addon?.price}</div></StyledSummaryItem>
+                })}
+                <StyledSummaryItem>
+                    <div>
+                        TOTAL
+                    </div>
+                    <div>${28 + (sum(
+                        concat(map(selected, item => item?.price || 0), map(addons, addon => addon?.price || 0))))}
+                    </div>
+                </StyledSummaryItem>
+            </StyledSummary>
+            <button className="button button--primary" onClick={handleAddToCart}>Add to Cart</button>
         </React.Fragment>
     );
 }

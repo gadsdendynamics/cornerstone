@@ -1,128 +1,596 @@
 [
   {
-    "id": "0",
-    "name": "5.56 Mag Pouch",
+    "id": "acc-556-bk",
+    "name": "5.56",
     "imageUrl": "/content/img/accessory--up--bk--3.png",
     "bcId": "189",
-    "price": "$8",
+    "price": 8,
     "widthScale": 3,
     "color": "black"
   },
   {
-    "id": "1",
-    "name": "Double Stack Pistol Mag Pouch",
-    "imageUrl": "/content/img/accessory--dsp--bk--2.png",
-    "bcId": "191",
-    "price": "$8",
-    "widthScale": 2,
-    "color": "black"
-  },
-  {
-    "id": "00",
-    "name": "5.56 Mag Pouch",
-    "imageUrl": "/content/img/accessory--up--bk--3.png",
-    "bcId": "189",
-    "price": "$8",
-    "widthScale": 3,
-    "color": "black"
-  },
-  {
-    "id": "11",
-    "name": "Double Stack Pistol Mag Pouch",
-    "imageUrl": "/content/img/accessory--dsp--bk--2.png",
-    "bcId": "191",
-    "price": "$8",
-    "widthScale": 2,
-    "color": "black"
-  },
-  {
-    "id": "2",
-    "name": "5.56 Mag Pouch",
+    "id": "acc-556-cb",
+    "name": "5.56",
     "imageUrl": "/content/img/accessory--up--cb--3.png",
     "bcId": "189",
-    "price": "$8",
+    "price": 8,
     "widthScale": 3,
     "color": "coyote-brown"
   },
   {
-    "id": "3",
-    "name": "Double Stack Pistol Mag Pouch",
-    "imageUrl": "/content/img/accessory--dsp--cb--2.png",
-    "bcId": "191",
-    "price": "$8",
-    "widthScale": 2,
-    "color": "coyote-brown"
-  },
-  {
-    "id": "4",
-    "name": "5.56 Mag Pouch",
+    "id": "acc-556-rg",
+    "name": "5.56",
     "imageUrl": "/content/img/accessory--up--rg--3.png",
     "bcId": "189",
-    "price": "$8",
+    "price": 8,
     "widthScale": 3,
     "color": "ranger-green"
   },
   {
-    "id": "5",
-    "name": "Double Stack Pistol Mag Pouch",
-    "imageUrl": "/content/img/accessory--dsp--rg--2.png",
-    "bcId": "191",
-    "price": "$8",
-    "widthScale": 2,
-    "color": "ranger-green"
-  },
-  {
-    "id": "6",
-    "name": "5.56 Mag Pouch",
+    "id": "acc-556-wg",
+    "name": "5.56",
     "imageUrl": "/content/img/accessory--up--wg--3.png",
     "bcId": "189",
-    "price": "$8",
+    "price": 8,
     "widthScale": 3,
     "color": "wolf-grey"
   },
   {
-    "id": "7",
-    "name": "Double Stack Pistol Mag Pouch",
-    "imageUrl": "/content/img/accessory--dsp--wg--2.png",
-    "bcId": "191",
-    "price": "$8",
-    "widthScale": 2,
-    "color": "wolf-grey"
-  },
-  {
-    "id": "8",
-    "name": "5.56 Mag Pouch",
+    "id": "acc-556-mc",
+    "name": "5.56",
     "imageUrl": "/content/img/accessory--up--mc--3.png",
     "bcId": "189",
-    "price": "$8",
+    "price": 8,
     "widthScale": 3,
     "color": "multicam"
   },
   {
-    "id": "9",
-    "name": "Double Stack Pistol Mag Pouch",
-    "imageUrl": "/content/img/accessory--dsp--mc--2.png",
-    "bcId": "191",
-    "price": "$8",
-    "widthScale": 2,
-    "color": "multicam"
-  },
-  {
-    "id": "10",
-    "name": "5.56 Mag Pouch",
+    "id": "acc-556-mcb",
+    "name": "5.56",
     "imageUrl": "/content/img/accessory--up--mcb--3.png",
     "bcId": "189",
-    "price": "$8",
+    "price": 8,
     "widthScale": 3,
     "color": "multicam-black"
   },
   {
-    "id": "11",
-    "name": "Double Stack Pistol Mag Pouch",
+    "id": "acc-mac-bk",
+    "name": "5.56, DS Pistol",
+    "imageUrl": "/content/img/accessory--mac--bk--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "black"
+  },
+  {
+    "id": "acc-mac-cb",
+    "name": "5.56, DS Pistol",
+    "imageUrl": "/content/img/accessory--mac--cb--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-mac-rg",
+    "name": "5.56, DS Pistol",
+    "imageUrl": "/content/img/accessory--mac--rg--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-mac-wg",
+    "name": "5.56, DS Pistol",
+    "imageUrl": "/content/img/accessory--mac--wg--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-mac-mc",
+    "name": "5.56, DS Pistol",
+    "imageUrl": "/content/img/accessory--mac--mc--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-mac-mcb",
+    "name": "5.56, DS Pistol",
+    "imageUrl": "/content/img/accessory--mac--mcb--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-dsp-bk",
+    "name": "DS Pistol",
+    "imageUrl": "/content/img/accessory--dsp--bk--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "black"
+  },
+  {
+    "id": "acc-dsp-cb",
+    "name": "DS Pistol",
+    "imageUrl": "/content/img/accessory--dsp--cb--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-dsp-rg",
+    "name": "DS Pistol",
+    "imageUrl": "/content/img/accessory--dsp--rg--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-dsp-wg",
+    "name": "DS Pistol",
+    "imageUrl": "/content/img/accessory--dsp--wg--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-dsp-mc",
+    "name": "DS Pistol",
+    "imageUrl": "/content/img/accessory--dsp--mc--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-dsp-mcb",
+    "name": "DS Pistol",
     "imageUrl": "/content/img/accessory--dsp--mcb--2.png",
-    "bcId": "191",
-    "price": "$8",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-subgun-bk",
+    "name": "Subgun",
+    "imageUrl": "/content/img/accessory--subgun--bk--2.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2.5,
+    "color": "black"
+  },
+  {
+    "id": "acc-subgun-cb",
+    "name": "Subgun",
+    "imageUrl": "/content/img/accessory--subgun--cb--2.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2.5,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-subgun-rg",
+    "name": "Subgun",
+    "imageUrl": "/content/img/accessory--subgun--rg--2.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2.5,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-subgun-wg",
+    "name": "Subgun",
+    "imageUrl": "/content/img/accessory--subgun--wg--2.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2.5,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-subgun-mc",
+    "name": "Subgun",
+    "imageUrl": "/content/img/accessory--subgun--mc--2.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2.5,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-subgun-mcb",
+    "name": "Subgun",
+    "imageUrl": "/content/img/accessory--subgun--mcb--2.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2.5,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-ssp-bk",
+    "name": "SS Pistol",
+    "imageUrl": "/content/img/accessory--ssp--bk--2.png",
+    "bcId": "189",
+    "price": 8,
     "widthScale": 2,
+    "color": "black"
+  },
+  {
+    "id": "acc-ssp-cb",
+    "name": "SS Pistol",
+    "imageUrl": "/content/img/accessory--ssp--cb--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-ssp-rg",
+    "name": "SS Pistol",
+    "imageUrl": "/content/img/accessory--ssp--rg--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-ssp-wg",
+    "name": "SS Pistol",
+    "imageUrl": "/content/img/accessory--ssp--wg--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-ssp-mc",
+    "name": "SS Pistol",
+    "imageUrl": "/content/img/accessory--ssp--mc--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-ssp-mcb",
+    "name": "SS Pistol",
+    "imageUrl": "/content/img/accessory--ssp--mcb--2.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 2,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-762-bk",
+    "name": "7.62",
+    "imageUrl": "/content/img/accessory--762--bk--4.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 4,
+    "color": "black"
+  },
+  {
+    "id": "acc-762-cb",
+    "name": "7.62",
+    "imageUrl": "/content/img/accessory--762--cb--4.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 4,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-762-rg",
+    "name": "7.62",
+    "imageUrl": "/content/img/accessory--762--rg--4.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 4,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-762-wg",
+    "name": "7.62",
+    "imageUrl": "/content/img/accessory--762--wg--4.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 4,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-762-mc",
+    "name": "7.62",
+    "imageUrl": "/content/img/accessory--762--mc--4.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 4,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-762-mcb",
+    "name": "7.62",
+    "imageUrl": "/content/img/accessory--762--mcb--4.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 4,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-sap-bk",
+    "name": "Small Admin Pouch",
+    "imageUrl": "/content/img/accessory--sap--bk--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "black"
+  },
+  {
+    "id": "acc-sap-cb",
+    "name": "Small Admin Pouch",
+    "imageUrl": "/content/img/accessory--sap--cb--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-sap-rg",
+    "name": "Small Admin Pouch",
+    "imageUrl": "/content/img/accessory--sap--rg--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-sap-wg",
+    "name": "Small Admin Pouch",
+    "imageUrl": "/content/img/accessory--sap--wg--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-sap-mc",
+    "name": "Small Admin Pouch",
+    "imageUrl": "/content/img/accessory--sap--mc--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-sap-mcb",
+    "name": "Small Admin Pouch",
+    "imageUrl": "/content/img/accessory--sap--mcb--3.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 3,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-lap-bk",
+    "name": "Large Admin Pouch",
+    "imageUrl": "/content/img/accessory--lap--bk--5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 5,
+    "color": "black"
+  },
+  {
+    "id": "acc-lap-cb",
+    "name": "Large Admin Pouch",
+    "imageUrl": "/content/img/accessory--lap--cb--5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 5,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-lap-rg",
+    "name": "Large Admin Poucb",
+    "imageUrl": "/content/img/accessory--lap--rg--5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 5,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-lap-wg",
+    "name": "Large Admin Pouch",
+    "imageUrl": "/content/img/accessory--lap--wg--5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 5,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-lap-mc",
+    "name": "Large Admin Pouch",
+    "imageUrl": "/content/img/accessory--lap--mc--5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 5,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-lap-mcb",
+    "name": "Large Admin Pouch",
+    "imageUrl": "/content/img/accessory--lap--mcb--5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 5,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-molle-bk",
+    "name": "PALS Column",
+    "imageUrl": "/content/img/accessory--molle--bk--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "black"
+  },
+  {
+    "id": "acc-molle-cb",
+    "name": "PALS Column",
+    "imageUrl": "/content/img/accessory--molle--cb--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-molle-rg",
+    "name": "PALS Column",
+    "imageUrl": "/content/img/accessory--molle--rg--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-molle-wg",
+    "name": "PALS Column",
+    "imageUrl": "/content/img/accessory--molle--wg--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-molle-mc",
+    "name": "PALS Column",
+    "imageUrl": "/content/img/accessory--molle--mc--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-molle-mcb",
+    "name": "PALS Column",
+    "imageUrl": "/content/img/accessory--molle--mcb--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-ec-bk",
+    "name": "Elastic Column",
+    "imageUrl": "/content/img/accessory--ec--bk--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "black"
+  },
+  {
+    "id": "acc-ec-cb",
+    "name": "Elastic Column",
+    "imageUrl": "/content/img/accessory--ec--cb--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-ec-rg",
+    "name": "Elastic Column",
+    "imageUrl": "/content/img/accessory--ec--rg--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-ec-wg",
+    "name": "Elastic Column",
+    "imageUrl": "/content/img/accessory--ec--wg--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-ec-mc",
+    "name": "Elastic Column",
+    "imageUrl": "/content/img/accessory--ec--mc--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-ec-mcb",
+    "name": "Elastic Column",
+    "imageUrl": "/content/img/accessory--ec--mcb--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "multicam-black"
+  },
+  {
+    "id": "acc-ss-bk",
+    "name": "Shotgun Shell",
+    "imageUrl": "/content/img/accessory--ss--bk--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "black"
+  },
+  {
+    "id": "acc-ss-cb",
+    "name": "Shotgun Shell",
+    "imageUrl": "/content/img/accessory--ss--cb--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "coyote-brown"
+  },
+  {
+    "id": "acc-ss-rg",
+    "name": "Shotgun Shell",
+    "imageUrl": "/content/img/accessory--ss--rg--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "ranger-green"
+  },
+  {
+    "id": "acc-ss-wg",
+    "name": "Shotgun Shell",
+    "imageUrl": "/content/img/accessory--ss--wg--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "wolf-grey"
+  },
+  {
+    "id": "acc-ss-mc",
+    "name": "Shotgun Shell",
+    "imageUrl": "/content/img/accessory--ss--mc--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
+    "color": "multicam"
+  },
+  {
+    "id": "acc-ss-mcb",
+    "name": "Shotgun Shell",
+    "imageUrl": "/content/img/accessory--ss--mcb--1.5.png",
+    "bcId": "189",
+    "price": 8,
+    "widthScale": 1.5,
     "color": "multicam-black"
   }
 ]
