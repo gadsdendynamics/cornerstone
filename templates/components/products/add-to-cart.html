@@ -1,5 +1,5 @@
 <div id="add-to-cart-wrapper" class="add-to-cart-wrapper" {{#unless product.can_purchase}}style="display: none"{{/unless}}>
-    {{#if theme_settings.show_product_quantity_box}}
+    {{#if product.show_quantity_input}}
         {{inject 'productQuantityErrorMessage'  (lang 'products.quantity_error_message')}}
         <div class="form-field form-field--increments">
             <label class="form-label form-label--alternate"
@@ -42,7 +42,7 @@
         <p class="alertBox-column alertBox-message"></p>
     </div>
     {{#or customer (unless settings.hide_price_from_guests)}}
-        <div class="add-to-cart-buttons">
+        <div class="add-to-cart-buttons {{#if product.pre_order}}pre-order-buttons{{/if}}">
             <div class="form-action">
                 <input
                         id="form-action-addToCart"

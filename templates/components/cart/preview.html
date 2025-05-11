@@ -1,5 +1,5 @@
 <div class="modal-header">
-    <h1 class="modal-header-title">
+    <h1 id="modal-header-title" class="modal-header-title">
         {{lang 'cart.added_to_cart.what_next' num_products=cart.quantity}}
     </h1>
 </div>
@@ -8,10 +8,6 @@
     <div class="previewCart">
         <section class="previewCartCheckout">
             {{#if cart.show_primary_checkout_button}}
-                {{#if cart.additional_checkout_buttons}}
-                    <div data-cart-accelerated-checkout-buttons class="previewCartCheckout-acceleratedCheckoutButtons"></div>
-                {{/if}}
-
                 <a href="{{urls.checkout.single_address}}" class="button button--primary" data-primary-checkout-now-action>
                     {{lang 'cart.added_to_cart.proceed_to_checkout'}}
                 </a>
@@ -117,4 +113,3 @@
         </section>
     {{/if}}
 </div>
-{{{remote_api_scripts}}}
